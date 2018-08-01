@@ -8,6 +8,11 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
+        {
+          "glob": "**/*",
+          "input": "../node_modules/leaflet/dist/images",
+          "output": "leaflet/"
+        },
         "assets",
         "favicon.ico"
       ],
@@ -19,7 +24,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css",
+        "../node_modules/leaflet/dist/leaflet.css",
+        "../node_modules/mapbox-gl/dist/mapbox-gl.css",
+        "../node_modules/@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
