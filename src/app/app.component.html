@@ -1,12 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container mt-5" style="height: 400px;">
-    <div class="row" style="height: 400px;">
-        <div class="col-sm-6">
-            <mgl-map [style]="'mapbox://styles/mapbox/streets-v9'" [zoom]="[9]" [center]="[4.4699, 50.5039]" style="height:100%;" (load)="onMapLoad($event)">
-                <mgl-layer id="state-borders" type="circle"></mgl-layer>
-                <mgl-control mglScale unit="imperial" position="top-right"></mgl-control>
-                <mgl-control mglNavigation></mgl-control>
-            </mgl-map>
-        </div>
-    </div>
-</div>
+
+<div id="map"></div>
+
+<!-- <mgl-map [style]="'mapbox://styles/mapbox/streets-v9'" [zoom]="[9]" [center]="[4.4699, 50.5039]" style="height:100%;" (load)="onMapLoad($event)">
+    <mgl-layer id="state-borders" type="circle"></mgl-layer>
+    <mgl-control mglScale unit="imperial" position="top-right"></mgl-control>
+    <mgl-control mglNavigation></mgl-control>
+</mgl-map> -->
